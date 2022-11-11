@@ -1,0 +1,85 @@
+.work .working {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.work {
+    padding-top: 59px;
+    padding-bottom: 94px;
+}
+
+.working {
+    text-align: center;
+}
+.forimages {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.picture {
+    position: relative;
+    display: block;
+    gap: 30px;
+    max-width: 100%;
+    background: url(16166.jpg);
+    border-radius: 0px;
+}
+.job-overlay {
+    position: absolute;
+    display: flex;
+    width: 370px;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.j-o-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.person .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.person {
+    background-color: #ffffff;
+}
+
+.person-work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.list-buttons .butone:hover,
+.list-buttons .butone:focus,
+.list-buttons .but:hover,
+.list-buttons .but:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+
+}

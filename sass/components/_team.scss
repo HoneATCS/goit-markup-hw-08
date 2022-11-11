@@ -1,0 +1,106 @@
+.team {
+    background: var(--bg-team);
+}
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-title:focus,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.carts {
+    display: flex;
+    text-decoration: none;
+    gap: 30px;
+    margin-top: 50px;
+}
+.person {
+    text-align: center;
+}
+.namec {
+    text-align: center;
+}
+.person-work {
+    margin-top: 10px;
+}
+.person {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.icons-cart-list {
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-listc {
+    display: flex;
+    fill: #AFB1B8;
+
+}
+
+.icons-link:hover,
+.icons-link:focus {
+    background-color: var(--accent-color);
+    fill: #FFFFFF;
+}
+.icons-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: #AFB1B8;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon .icon-instagram-2 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    align-content: center;
+    vertical-align: middle;
+    color: #AFB1B8;
+}
+
+.icon-twitter-1 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    align-content: center;
+    vertical-align: middle;
+    color: #AFB1B8;
+}
+
+.icon-facebook-1 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    align-content: center;
+    vertical-align: middle;
+    color: #AFB1B8;
+}
+
+.icon-linkedin-1 {
+    width: 20px;
+    height: 20px;
+    background-image: url("./images/icon-linkedin-1.svg");
+    cursor: pointer;
+    align-content: center;
+    vertical-align: middle;
+    color: #AFB1B8;
+}

@@ -1,0 +1,48 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.contacts-list-h,
+.navigation-site-nav-list {
+    display: flex;
+    gap: 50px;
+    margin-right: 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.navigation-logo:focus,
+.navigation-logo {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.navigation-logos {
+    color: var(--accent-color);
+
+    -nev-accent: #2196f3;
+}
+.link-p,
+.link-s,
+.link {
+    position: relative;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}

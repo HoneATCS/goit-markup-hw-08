@@ -1,0 +1,146 @@
+.our-describe {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.skills .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.skills .skil {
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.list-skills {
+    width: 100%;
+   /* flex-basis: calc((100% - 3 * 30px)) / 4;
+    max-width: 270px;*/
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+
+     display: block;
+
+    }
+}
+
+.box {
+   width: 100%;
+    @media screen and (min-width: 320px) and (max-width: 480px){ 
+    margin-bottom: 30px;
+    width: 450px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+
+    @media screen and (min-width:480px){ 
+margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+    }
+    @media screen and (min-width:768px){
+margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+   /* display: flex;*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  gap: 30px;
+  width: 480px;
+  display: block;
+  flex-wrap: wrap;
+    
+  }  
+}
+}
+
+.icon-antenna-1 {
+    width: 70px;
+    height: 70px;
+    align-items: center;
+}
+
+.box>.icon {
+    display: flex;
+    background-repeat: no-repeat;
+    gap: 30px;
+    align-items: center;
+}
+
+.icon-clock-1 {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.icon-diagram-1 {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.icon-astronaut-1 {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.overlay {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
