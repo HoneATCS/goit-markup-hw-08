@@ -7,8 +7,8 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -16,12 +16,17 @@
 }
 
 .client-list {
-    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-w: 768px){
+        width: 100%;
+       width: calc((100%-30px)/2); 
+    }
 }
 
 .client-link {
