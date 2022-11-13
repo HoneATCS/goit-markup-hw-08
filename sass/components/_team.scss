@@ -57,16 +57,91 @@ text-align: center;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 margin-bottom: 30px;
+
+    }
 }
+
 @media screen and(min-width: 768px) {}
 
 @media screen and(min-width: 1200px) {
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+/*ext-align:center;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+*/
+}
 
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.team-img-1{
+    @media screen and(min-width:480px) {
+
+    background-image: var(--bg-team), url(./images/img-mobile/our-team-1.jpeg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    }
+     background-image: var(--bg-team) url(./images/img-mobile/our-team-1-2x.jpeg);
+        }
+
+    @media screen and(min-width: 768px) {}
+        
+     @media screen and(min-width: 1200px) {
 }
 }
+.team-img-2{
+    @media screen and(min-width:480px) {
+    
+            background-image: var(--bg-team), url(./images/img-mobile/our-team-2.jpeg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {}
+    
+            background-image: var(--bg-team) url(./images/img-mobile/our-team-2-2x.jpeg);
+        }
+    
+        @media screen and(min-width: 768px) {}
+    
+        @media screen and(min-width: 1200px) {}
+    }
+.team-img-3{
+    @media screen and(min-width:480px) {
+    
+            background-image: var(--bg-team), url(./images/img-mobile/our-team-3.jpeg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {}
+    
+            background-image: var(--bg-team) url(./images/img-mobile/our-team-3-2x.jpeg);
+        }
+    
+        @media screen and(min-width: 768px) {}
+    
+        @media screen and(min-width: 1200px) {}
+    }
+.team-img-3 {
+    @media screen and(min-width:480px) {
+    
+            background-image: var(--bg-team), url(./images/img-mobile/our-team-4.jpeg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {}
+    
+            background-image: var(--bg-team) url(./images/img-mobile/our-team-4-2x.jpeg);
+        }
+    
+        @media screen and(min-width: 768px) {}
+    
+        @media screen and(min-width: 1200px) {}
+    }
+
 .icons-cart-list {
     display: flex;
     text-decoration: none;
