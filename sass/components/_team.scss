@@ -1,57 +1,72 @@
 .team {
     background: var(--bg-team);
+}
+.team {
+    @media screen and(min-width:480px) {
     padding-top: 60px;
     padding-bottom: 94px;
-}
+    }
+    @media screen and(min-width: 768px) {
 
+    }
+    
+    @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+    }
 .team-title:focus,
 .team-title {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 36px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
-
 .carts {
-   /* display: flex;*/
+    @media screen and(min-width:480px) {
+    
     text-decoration: none;
     gap: 30px;
     margin-top: 30px;
-    @media screen and (min-width: 480px) {
-    text-decoration: none;
-    gap: 30px;
-    margin-top: 30px;
-}
-}
+    }
 
-.person {
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    @media screen and (min-width: 480px) {
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    @media screen and(min-width: 768px) {
+
+    }
+    
+    @media screen and(min-width: 1200px) {
+    display: flex;
+    text-decoration: none;
+    gap: 30px;
+    margin-top: 50px;
 }
 }
 
 .namec {
     text-align: center;
-    padding-top: 16px;
-    padding-bottom: 14px;
-      
 }
-
 .person-work {
     margin-top: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-   
 }
+.person {
 
+@media screen and(min-width:480px) {
+text-align: center;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+margin-bottom: 30px;
+}
+@media screen and(min-width: 768px) {}
+
+@media screen and(min-width: 1200px) {
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+}
 .icons-cart-list {
     display: flex;
     text-decoration: none;
@@ -64,15 +79,7 @@
 .icon-listc {
     display: flex;
     fill: #AFB1B8;
-    padding: 0 auto;    
-}
 
-.person .name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
 }
 
 .icons-link:hover,
