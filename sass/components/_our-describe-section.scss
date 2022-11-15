@@ -1,17 +1,6 @@
 .our-describe {
-    @media screen and(min-width:480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    }
-
-    @media screen and(min-width: 768px) {
-
-    }
-
-    @media screen and(min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 47px;
-}
 }
 
 .visually-hidden {
@@ -27,87 +16,34 @@
     overflow: hidden;
 }
 .skills .title {
-    @media screen and(min-width:480px) {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-text-color);
-    text-align: center;
-}
- @media screen and(min-width: 768px) {
-
- }
-
- @media screen and(min-width: 1200px) {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
- }
 }
 
 .skills .skil {
-    @media screen and(min-width:480px) {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-    text-align: left;
-    margin-bottom: 30px;
-    }
-
-    @media screen and(min-width: 768px) {
-
-    }
-
-    @media screen and(min-width: 1200px) {
-
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-}
 .list-skills {
-    @media screen and(min-width:480px) {
-    }
-
-    @media screen and(min-width: 768px) {
-
-    }
-    
-    @media screen and(min-width: 1200px) {
     flex-basis: calc((100% - 3 * 30px)) / 4;
     max-width: 270px;
 }
+@media screen and (min-width: 480px) {
+.list-skills {
+        flex-basis: calc((100% - 3 * 30px)) / 4;
+        max-width: 480px;
 }
-
+}
 .box {
-    
-    @media screen and(min-width:480px) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 480px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border: 1px solid white;
-    border-radius: 4px;
-    
-    }
-    
-    @media screen and(min-width: 768px) {
-
-    }
-    
-    @media screen and(min-width: 1200px) {
     display: flex;
     margin-bottom: 30px;
-    width: 1200px;
+    width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border: 1px solid white;
@@ -116,21 +52,64 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (min-width: 480px){
+    .box {
+    display: flex;
+    margin-bottom: 30px;
+    width: 480px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+        }
 }
-
+@media screen and (min-width: 768px) {
+    .box {
+    display: flex;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+        }
+}
 .skills {
-    @media screen and(min-width:480px) {
-
-    }
-    @media screen and(min-width: 768px) {
-
-    }
-    @media screen and(min-width: 1200px) {
+    @media screen and (max-width: 480px) {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 768px) {
+.skills {
+display: flex;
+    gap: 30px;
+    
 }
 }
-
+@media screen and (min-width: 1200px) {
+.skills {
+display: flex;
+    gap: 30px;
+    
+}
+}
+/*
+ @media screen and (min-width: 767px) {
+    .skills {
+        max-width: 767px;
+        
+     }
+    }
+*/
 .list-skills {
     display: block;
     justify-content: space-between;
@@ -143,21 +122,10 @@
 }
 
 .box>.icon {
-    @media screen and(min-width:480px) {
-         display: flex;
-         margin-left: auto;
-         margin-right: auto;
-    }
-    @media screen and(min-width: 768px) {
-
-    }
-    
-    @media screen and(min-width: 1200px) {
     display: flex;
     background-repeat: no-repeat;
     gap: 30px;
     align-items: center;
-}
 }
 
 .icon-clock-1 {
@@ -177,7 +145,6 @@
     height: 70px;
     cursor: pointer;
 }
-/*
 .overlay {
     max-width: 1600px;
     padding-top: 200px;
@@ -190,4 +157,11 @@
     background-repeat: no-repeat;
     align-items: center;
 }
-*/
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .box {
+          background-image: url('photo@2x.png');
+      }
+  }

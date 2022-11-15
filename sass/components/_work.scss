@@ -11,7 +11,11 @@
     padding-top: 59px;
     padding-bottom: 94px;
 }
-
+@media screen and (max-width: 768px) {
+.work {
+display: none;
+}  
+}
 .working {
     text-align: center;
 }
