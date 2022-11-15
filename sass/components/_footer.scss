@@ -6,13 +6,37 @@
 
 }
 .container-f {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        align-items: baseline;
+        text-align: center;
+}
+@media screen and (min-width: 780px) {
+    .container-f {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     align-items: baseline;
+    }
 }
+@media screen and (min-width: 1200px) {
+    .container-f {
+    display: flex;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    align-items: baseline;
+    text-align: justify;
+    gap: 60px;
+    }
+}
+
+
 .flogo {
     font-family: "Raleway";
     font-style: normal;
@@ -128,11 +152,34 @@ p {
 
 .footer-icons-link {
     display: flex;
-    margin-left: 72px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    padding-top: 60px;
 }
+ @media screen and (min-width: 780px) {
+    .footer-icons-link {
+            display: flex;
+            /*margin-left: 72px;*/
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+                padding-left: 70px;
+                    padding-right: 60px;
+    }
+}
+ @media screen and (min-width: 1200px) {
+    .footer-icons-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 70px;
+    padding-right: 60px;
+    
+    }
+}
+
 
 .foter-link-title {
     font-family: 'Roboto';
@@ -230,7 +277,14 @@ p {
 
 .form-button-foot {
     gap: 10px;
+    
+    padding-top: 60px;
+    @media screen and (min-width: 780px) {
+    .form-button-foot {
+    gap: 10px;
     margin-left: 115px;
+    }
+    }
 }
 
 .input-mail {
@@ -264,8 +318,14 @@ p {
 }
 
 .form-pidp {
+   
+    gap: 12px;
+}
+    @media screen and (min-width: 780px) {
+        .form-pidp {
     display: flex;
     gap: 12px;
+        }
 }
 
 

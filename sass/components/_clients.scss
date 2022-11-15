@@ -23,7 +23,17 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+ @media screen and (min-width: 480px) {
+    .client-list{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    }
+ }
 .client-link {
     display: flex;
     width: 170px;

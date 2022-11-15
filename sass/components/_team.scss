@@ -13,33 +13,37 @@
     color: #212121;
 }
 .carts {
-@media screen and (min-width: 320px) {
- 
     text-decoration: none;
     gap: 30px;
     margin-top: 50px;
+   
 }
-@media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     .carts {
-            text-decoration: none;
-            gap: 30px;
-            margin-top: 50px;
-            align-items: center;
-        }
-}
-@media screen and (min-width: 768px) {
-  display: flex;
     text-decoration: none;
     gap: 30px;
     margin-top: 50px;
+    align-items: center;
+    }
 }
-@media screen and (min-width: 1200px) {
-display: flex;
-text-decoration: none;
-gap: 30px;
-margin-top: 50px;
+ @media screen and (min-width: 768px) {
+    .carts {
+     display: flex;
+     text-decoration: none;
+     gap: 30px;
+     margin-top: 50px;
+    }
 }
-}
+ @media screen and (min-width: 1200px) {
+    .carts {
+     display: flex;
+     text-decoration: none;
+     gap: 30px;
+     margin-top: 50px;
+    }
+  }
+
+
 
 img {
     

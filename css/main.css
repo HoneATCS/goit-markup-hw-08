@@ -252,25 +252,30 @@ header > .header-containe {
   padding-right: 15px;
   margin: 0 auto;
 }
-
-@media screen and (min-width: 480px) {
-  .container {
+@media screen and (min-width: 320px) {
+  .container .container {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 767px) {
-  .container {
+  .container .container {
     max-width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .container .container {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
   }
 }
+
 .product {
   overflow: hidden;
 }
@@ -450,24 +455,26 @@ header > .header-containe {
     max-width: 480px;
   }
 }
-.box {
-  display: flex;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  background-color: #F5F4FA;
-  border: 1px solid white;
-  border-radius: 4px;
-  background-size: border-box;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: 480px) {
-  .box {
+@media screen and (min-width: 320px) {
+  .box .box {
+    width: 100%;
     display: flex;
     margin-bottom: 30px;
-    width: 480px;
+    max-width: 320px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .box .box {
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 480px;
     height: 120px;
     background-color: #F5F4FA;
     border: 1px solid white;
@@ -478,10 +485,10 @@ header > .header-containe {
   }
 }
 @media screen and (min-width: 768px) {
-  .box {
+  .box .box {
     display: flex;
     margin-bottom: 30px;
-    width: 270px;
+    width: 768px;
     height: 120px;
     background-color: #F5F4FA;
     border: 1px solid white;
@@ -491,6 +498,21 @@ header > .header-containe {
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .box .box {
+    display: flex;
+    margin-bottom: 30px;
+    width: 768px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-size: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .skills {
     display: flex;
@@ -682,15 +704,14 @@ header > .header-containe {
   color: #212121;
 }
 
-@media screen and (min-width: 320px) {
-  .carts {
-    text-decoration: none;
-    gap: 30px;
-    margin-top: 50px;
-  }
+.carts {
+  text-decoration: none;
+  gap: 30px;
+  margin-top: 50px;
 }
-@media screen and (max-width: 480px) {
-  .carts .carts {
+
+@media screen and (min-width: 480px) {
+  .carts {
     text-decoration: none;
     gap: 30px;
     margin-top: 50px;
@@ -713,7 +734,6 @@ header > .header-containe {
     margin-top: 50px;
   }
 }
-
 @media screen and (max-width: 480px) {
   img .img {
     max-width: 100%;
@@ -852,6 +872,17 @@ header > .header-containe {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .client-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+}
 .client-link {
   display: flex;
   width: 170px;
@@ -908,14 +939,36 @@ header > .header-containe {
 }
 
 .container-f {
-  display: flex;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   align-items: baseline;
+  text-align: center;
 }
 
+@media screen and (min-width: 780px) {
+  .container-f {
+    display: flex;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-f {
+    display: flex;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    align-items: baseline;
+    text-align: justify;
+    gap: 60px;
+  }
+}
 .flogo {
   font-family: "Raleway";
   font-style: normal;
@@ -1031,12 +1084,33 @@ p {
 
 .footer-icons-link {
   display: flex;
-  margin-left: 72px;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  padding-top: 60px;
 }
 
+@media screen and (min-width: 780px) {
+  .footer-icons-link {
+    display: flex;
+    /*margin-left: 72px;*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 70px;
+    padding-right: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-icons-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 70px;
+    padding-right: 60px;
+  }
+}
 .foter-link-title {
   font-family: "Roboto";
   font-style: normal;
@@ -1134,7 +1208,13 @@ p {
 
 .form-button-foot {
   gap: 10px;
-  margin-left: 115px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 780px) {
+  .form-button-foot .form-button-foot {
+    gap: 10px;
+    margin-left: 115px;
+  }
 }
 
 .input-mail {
@@ -1167,10 +1247,15 @@ p {
 }
 
 .form-pidp {
-  display: flex;
   gap: 12px;
 }
 
+@media screen and (min-width: 780px) {
+  .form-pidp {
+    display: flex;
+    gap: 12px;
+  }
+}
 .foot-em-bottom {
   display: flex;
   width: 200px;
