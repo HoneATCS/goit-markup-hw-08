@@ -10,9 +10,12 @@
 .work {
     padding-top: 59px;
     padding-bottom: 94px;
-    @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
             display: none;
         }
+ @media screen and (max-width: 1200px) {
+     display: none;
+}
 }
 
 .working {
