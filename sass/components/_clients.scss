@@ -23,17 +23,7 @@
     margin-left: auto;
     margin-right: auto;
 }
- @media screen and (min-width: 480px) {
-    .client-list{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    }
- }
+
 .client-link {
     display: flex;
     width: 170px;
@@ -82,4 +72,27 @@
 .icon-Logo {
     width: 106px;
     height: 60px;
+}
+.client-item{ 
+   @media screen and (min-width: 1200px) {
+       width: 100%;
+       text-align: center;
+   }
+
+   @media screen and (min-width: 768px) {
+       .client-item {
+           flex-basis: calc((100% - 30px)/2);
+           text-align: center;
+       }
+   }
+
+   @media screen and (min-width: 480px) {
+       .client-item {
+           width: 100%;
+           padding-top: 30px;
+           padding-bottom: 30px;
+           text-align: center;
+       }
+   }
+
 }

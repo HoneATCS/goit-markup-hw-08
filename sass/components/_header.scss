@@ -25,12 +25,6 @@
 }
 }
 
-.contacts-list-h {
-    display: flex;
-    gap: 50px;
-    margin-right: 93px;
-    margin-left: 93px;
-}
 .header {
     border-bottom: 1px solid #ececec;
 }
@@ -128,11 +122,6 @@ color: var(--accent-color);
 }
 }
 
-.contacts-list-h {
-    display: flex;
-    margin-left: auto;
-    margin-right: 0px;
-}
 
 .link-mail,
 .linktel {
@@ -158,3 +147,16 @@ color: var(--accent-color);
 .icon-smartphone:link:hover.icon {
     color: var(--accent-color);
 }
+
+.navigation-site-nav-list,
+ .contacts-list-h{
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+@media screen and (min-width: 768px){
+.navigation-site-nav-list {
+    display: block;
+}
+}
+}
+

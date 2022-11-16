@@ -1,18 +1,45 @@
 .header {
     border-bottom: 1px solid #ececec;
 }
+
 .contacts-list-h,
-.navigation-site-nav-list {
-    display: flex;
-    gap: 50px;
-    margin-right: 0;
+{
+    @media screen and (min-width: 320px) {
+    display: none;
+    
+    }
+    }
+ @media screen and (min-width: 768px) {
+    .contacts-list-h{ 
+            display: block;
+            gap: 10px;
+            margin-left: auto;
+        }
 }
+ @media screen and (min-width: 1200px) {
+    .contacts-list-h{ 
+        display: flex;
+        flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            margin-left: auto;
+        }
+    }
+    
+ .navigation-site-nav-list{
+    @media screen and (min-width: 768px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 50px;
+        }
+ }
+ 
 
 .navigation {
     display: flex;
     align-items: center;
 }
-
 
 .header {
     border-bottom: 1px solid #ececec;

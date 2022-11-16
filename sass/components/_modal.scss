@@ -4,12 +4,6 @@
     pointer-events: none;
 }
 
-@media screen and (min-width: 480px) {
-    .is-hidden {
-    position: absolute;
-    }
-}
-
 .modal {
     position: absolute;
     padding: 40px;
@@ -29,7 +23,6 @@
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 }
-
 .backdrop {
     position: fixed;
     top: 0;
