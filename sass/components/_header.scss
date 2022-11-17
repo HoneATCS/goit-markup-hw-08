@@ -169,4 +169,12 @@ color: var(--accent-color);
 }
 }
 
-
+.cont-items{
+    @media screen and (min-width: 1200px) {
+    display: flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}

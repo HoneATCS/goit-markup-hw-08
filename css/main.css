@@ -164,6 +164,16 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .cont-items {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+}
+
 .navigation__menu--open-button {
   display: flex;
   padding: 0;
@@ -378,24 +388,8 @@ li {
   --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 1200px) {
-  header > .container .container {
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  header > .container .container {
-    max-width: 768px;
-    align-items: center;
-  }
-}
-
 @media screen and (min-width: 480px) {
-  .container {
+  header > .hed-container .container {
     max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
@@ -403,6 +397,22 @@ li {
     align-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  header > .hed-container .container {
+    max-width: 768px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header > .hed-container {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+}
+
 .page-header-container {
   display: flex;
   align-items: center;
@@ -1397,10 +1407,10 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-icons-link {
     display: flex;
-    margin-left: 72px;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: flex-start;
+    margin-left: 93px;
   }
 }
 
@@ -1496,18 +1506,34 @@ img {
   margin-left: 93px;
 }
 
-.foter-link-tit {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 20px;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 320px) and (min-width: 480px) {
+  .foter-link-tit {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foter-link-tit {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 320px) and (min-width: 480px) {
@@ -1564,6 +1590,8 @@ img {
   .form-pidp {
     display: flex;
     gap: 12px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
   }
 }
 
