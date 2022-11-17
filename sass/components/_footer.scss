@@ -1,18 +1,49 @@
 .footer {
+    @media screen and (min-width: 320px) and (min-width: 480px) {
+        text-align: center;
+            width: 100%;
+            padding-top: 60px;
+                padding-bottom: 60px;
+                max-width: 100%;
+                margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     background: var(--bg-herro);
     padding-top: 60px;
     padding-bottom: 60px;
-
+    }
 }
+
+.footer-fortwo{
+@media screen and (min-width: 320px) and (min-width: 480px) {
+text-align: center;
+width: 100%;
+margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0;
+}
+}
+       
 .container-f {
+    @media screen and (min-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     align-items: baseline;
+    flex-wrap: nowrap;
+    }
 }
+
 .flogo {
     font-family: "Raleway";
     font-style: normal;
@@ -130,14 +161,32 @@ img {
 
 
 .footer-icons-link {
+@media screen and (min-width: 320px) and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 72px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    }
 }
 
 .foter-link-title {
+@media screen and (min-width: 320px) and (min-width: 480px) {
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: .03em;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+        margin-bottom: 20px;
+    }
+
+@media screen and (min-width: 1200px) {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -147,8 +196,8 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
+    
+}
 }
 
 .footer-link-list {
@@ -231,9 +280,15 @@ img {
     justify-content: center;
 }
 
-.form-button-foot {
+.form-button-foot{
+@media screen and (min-width: 320px) and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
+    }
+ @media screen and (min-width: 1200px) {
     gap: 10px;
     margin-left: 115px;
+ }
 }
 
 .input-mail {
@@ -267,8 +322,16 @@ img {
 }
 
 .form-pidp {
+    @media screen and (min-width: 320px) and (min-width: 480px) {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+@media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+}
 }
 
 

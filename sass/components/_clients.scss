@@ -1,9 +1,23 @@
 .clients {
+@media screen and (min-width: 480px) {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+}
 
 .clients-title {
+@media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: .03em;
+    margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -13,16 +27,27 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
+    }
 }
 
 .client-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+   
+ @media screen and (min-width: 480px) {
+display: flex;
+gap: 30px;
+flex-wrap: wrap;
+justify-content: center;
+ }
+  @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: nowrap;
+  }
+ }
 
 .client-link {
     display: flex;

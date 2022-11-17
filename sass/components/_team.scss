@@ -2,11 +2,25 @@
     background: var(--bg-team);
 }
 .team {
+@media screen and (min-width: 320px) and (min-width: 480px) {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 .team-title:focus,
 .team-title {
+    @media screen and (min-width: 320px) and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: .03em;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -14,20 +28,30 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.carts {
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    display: flex;
-   justify-content: center;
-    gap: 30px;
-    
 }
-@media screen and (min-width: 768px){ 
+
 .carts {
+
+@media screen and (min-width: 768px){ 
     flex-basis: calc((100% - 30px)/2);
 }
+@media screen and (min-width: 320px) and (min-width: 480px){
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+    }
+@media screen and (min-width: 1200px) {
+     width: 1200px;
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     flex-wrap: nowrap;
+    
+     }
 }
-}
+
+
 
 .person {
 @media screen and (min-width: 1200px) {
@@ -48,28 +72,24 @@
                 }
 }
 .namec {
-    @media screen and (min-width: 1200px) {
-            width: 100%;
-            text-align: center;
-        }
-    
-        @media screen and (min-width: 768px) {
-            .namec {
-                flex-basis: calc((100% - 30px)/2);
-                text-align: center;
-            }
-        }
-    
-        @media screen and (min-width: 480px) {
-            .namec {
-                    width: 100%;
-                        padding-top: 30px;
-                        padding-bottom: 30px;
-                        text-align: center;
-                    }
-        }
-    
+@media screen and (min-width: 480px) {
+width: 100%;
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+    }
+@media screen and (min-width: 768px) {
+.namec {
+flex-basis: calc((100% - 30px)/2);
+text-align: center;
+    }
 }
+ @media screen and (min-width: 1200px) {
+     width: 100%;
+    text-align: center;
+ }
+}
+
 .person-work {
     margin-top: 10px;
 }

@@ -54,7 +54,7 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu" data-menu="">
+      <div class="mobile-menu is-hidden" data-menu>
         <div class="mobile-menu__container">
           <button class="mobile-menu__close-btn" type="button" data-menu-close="">
             <svg class="mobile-menu__close-icon" width="40" height="40">
@@ -197,7 +197,21 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="carts">
             <li class="person">
-                <img src="./images/Our-team-Demyanenko1.jpg" alt="на білому фоні чоловік в окулярах" width="270" height="260"/>
+              <picture>
+                <source srcset="
+                                  ./images/demianenko-img-1x.jpg 1x,
+                                  ./images/demianenko-img-2x.jpg 2x
+                                " media="(min-width: 1200px)">
+                <source srcset="
+                                  ./images/demianenko-img-tab-1x.jpg 1x,
+                                  ./images/demianenko-img-tab-2x.jpg 2x
+                                " media="(min-width: 768px)">
+                <source srcset="
+                                  ./images/demianenko-img-mob-1x.jpg 1x,
+                                  ./images/demianenko-img-mob-2x.jpg 2x
+                                " media="(min-width: 320px)">
+                <img src="./images/demianenko-img-1x.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+              </picture>
                 <div class="namec">
                   <h3 class="name">Ігор Дем'яненко</h3>
                   <p class="person-work">Product Designer</p>
@@ -234,7 +248,21 @@
                 </div>
             </li>
             <li class="person">
-              <img src="./images/Our-team-Repina2.jpg" alt="жінка посміхається в костюмі та в окулярах" width="270" height="260"/>
+              <picture>
+                <source srcset="
+                                  ./images/repina-img-1x.jpg 1x,
+                                  ./images/repina-img-2x.jpg 2x
+                                " media="(min-width: 1200px)">
+                <source srcset="
+                                  ./images/repina-img-tab-1x.jpg 1x,
+                                  ./images/repina-img-tab-2x.jpg 2x
+                                " media="(min-width: 768px)">
+                <source srcset="
+                                  ./images/repina-img-mob-1x.jpg 1x,
+                                  ./images/repina-img-mob-2x.jpg 2x
+                                " media="(min-width: 320px)">
+                <img src="./images/repina-img-1x.jpg" alt="Ольга Рєпіна" width="270" height="260">
+              </picture>
              <div class="namec">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="person-work">Frontend Developer</p>
@@ -271,7 +299,21 @@
              </div>
             </li>
             <li class="person">
-              <img src="./images/Our-team-Tarasov3.jpg" alt="чоловік в сірій рубашці посміхається" width="270" height="260"/>
+            <picture>
+              <source srcset="
+                                ./images/tarasov-img-1x.jpg 1x,
+                                ./images/tarasov-img-2x.jpg 2x
+                              " media="(min-width: 1200px)">
+              <source srcset="
+                                ./images/tarasov-img-tab-1x.jpg 1x,
+                                ./images/tarasov-img-tab-2x.jpg 2x
+                              " media="(min-width: 768px)">
+              <source srcset="
+                                ./images/tarasov-img-mob-1x.jpg 1x,
+                                ./images/tarasov-img-mob-2x.jpg 2x
+                              " media="(min-width: 320px)">
+              <img src="./images/tarasov-img-1x.jpg" alt="Микола Тарасов" width="270" height="260">
+            </picture>
               <div class="namec">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="person-work">Marketing</p>
@@ -308,7 +350,21 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/Our-team-Ermakov4.jpg" alt="чоловік в чорній футболці та окулярах" width="270" height="260"/>
+              <picture>
+                <source srcset="
+                                  ./images/iermakov-img-1x.jpg 1x,
+                                  ./images/iermakov-img-2x.jpg 2x
+                                " media="(min-width: 1200px)">
+                <source srcset="
+                                  ./images/iermakov-img-tab-1x.jpg 1x,
+                                  ./images/iermakov-img-tab-2x.jpg 2x
+                                " media="(min-width: 768px)">
+                <source srcset="
+                                  ./images/iermakov-img-mob-1x.jpg 1x,
+                                  ./images/iermakov-img-mob-2x.jpg 2x
+                                " media="(min-width: 320px)">
+                <img src="./images/iermakov-img-1x.jpg" alt="Михайло Єрмаков" width="270" height="260">
+              </picture>
               <div class="namec">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="person-work">UI Designer</p>
