@@ -327,6 +327,7 @@ li {
 @media screen and (max-width: 767px) {
   .cont-items {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -422,6 +423,7 @@ li {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding: 16px 0;
 }
 
 .navigation-logos {
