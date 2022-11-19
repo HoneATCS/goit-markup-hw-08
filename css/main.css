@@ -194,12 +194,6 @@ li {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .navigation-site-nav-list,
-.contacts-list-h {
-    display: block;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .cont-items {
@@ -2031,20 +2025,35 @@ img {
   pointer-events: none;
 }
 
-.modal {
-  position: absolute;
-  padding: 40px;
-  position: absolute;
-  min-height: 581px;
-  min-width: 528px;
-  top: 50%;
-  left: 50%;
-  visibility: visible;
-  background-color: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 100%;
+    min-height: 609px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 15px;
+    background-color: var(--primary-white-color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    padding: 40px;
+    position: absolute;
+    min-height: 581px;
+    min-width: 528px;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -2156,10 +2165,26 @@ img {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 320px) {
+  .modal-form-message {
+    width: 100%;
+    max-width: 448px;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: rgba(0, 0, 0, 0);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 .modal-form-message,
 .modal-form-input {
   display: block;
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 40px;
   font-weight: 400;
   font-size: 14px;
@@ -2176,6 +2201,20 @@ img {
   position: relative;
   margin-top: 4px;
   padding-left: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000;
+    padding-left: 42px;
+    outline: rgba(0, 0, 0, 0);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal-form-message:hover,
@@ -2205,20 +2244,35 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 12px;
-  text-align: center;
+@media screen and (min-width: 320px) {
+  .modal-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 12px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-form-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+    text-align: center;
+  }
 }
 
 .modal-form-message {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 120px;
   border-radius: 4px;
   margin-top: 4px;
@@ -2327,6 +2381,18 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*
+.modal-form{
+    width: 100%;
+        min-height: 609px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 40px 15px;
+        background-color: var(--primary-white-color);
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+}*/
 body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
