@@ -7,9 +7,11 @@
 display: none;
     }
  @media screen and (min-width: 768px) {
-    display: block;
-    gap: 10px;
+    display: flex;
     margin-left: auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 17px 0;
 }
 @media screen and (min-width: 1200px) {
     display: flex;

@@ -21,10 +21,18 @@ text-align: center;
 width: 100%;
 margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+    width: 50%;
+        margin-right: auto;
+        text-align: center;
+         
+            margin-bottom: 60px;
+}
 @media screen and (min-width: 1200px) {
         width: 100%;
         text-align: left;
         margin-bottom: 0;
+        padding-right: 60px;
 }
 }
        
@@ -137,9 +145,12 @@ p {
 }
 
 img {
-    display: block;
-    max-width: 100%;
+        display: block;
+            max-width: 100%;
+            height: auto;
+            width: 100%;
 }
+
 .addresfoot {
     margin-top: 20px;
 }
@@ -166,12 +177,18 @@ img {
     width: 100%;
     margin-bottom: 60px;
  }
+ @media screen and (min-width: 768px) {
+    width: 50%;
+        margin-left: auto;
+        text-align: center;
+            margin-bottom: 60px;
+ }
  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-left: 93px;
+    
 }
 }
 
@@ -299,6 +316,10 @@ img {
     text-align: center;
     width: 100%;
     }
+        @media screen and (min-width: 768px) {
+                text-align: center;
+                    width: 100%;
+        }
  @media screen and (min-width: 1200px) {
     gap: 10px;
     margin-left: 115px;
@@ -325,6 +346,17 @@ img {
     color: rgba(255, 255, 255, 0.6);
     outline: none;
 }
+@media screen and (min-width: 768px) {
+.input-mail {
+    margin-bottom: 16px;
+}
+}
+@media screen and (min-width: 1200px) {
+.input-mail {
+    margin-bottom: 0;
+}
+}
+
 
 .input-mail:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -343,11 +375,20 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     }
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+    display: flex;
+        gap: 12px;
+        flex-direction: column;
+            
+            align-items: center;
+        flex-wrap: nowrap;
+        }
+    @media screen and (min-width: 1200px) {
     display: flex;
     gap: 12px;
     justify-content: flex-end;
     flex-wrap: nowrap;
+    flex-direction: revert;
 }
 }
 

@@ -2,6 +2,10 @@
     background: var(--bg-team);
 }
 .team {
+    @media screen and (min-width: 320px) {
+    padding-top: 60px;
+        padding-bottom: 60px;
+    }
 @media screen and (min-width: 320px) and (min-width: 480px) {
 padding-top: 60px;
 padding-bottom: 60px;
@@ -31,16 +35,15 @@ padding-bottom: 60px;
 }
 
 .carts {
-
+@media screen and (min-width: 320px) and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 @media screen and (min-width: 768px){ 
     flex-basis: calc((100% - 30px)/2);
 }
-@media screen and (min-width: 320px) and (min-width: 480px){
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
-justify-content: center;
-    }
+
 @media screen and (min-width: 1200px) {
      width: 1200px;
      display: flex;
@@ -54,24 +57,29 @@ justify-content: center;
 
 
 .person {
-@media screen and (min-width: 1200px) {
-    width: 100%;
-    text-align: center; 
+@media screen and (min-width: 480px) {
+
+
 }
 @media screen and (min-width: 768px) {
-    .person {
-        flex-basis: calc((100% - 30px)/2);
-        justify-content: center;
+flex-basis: calc((100% - 30px)/2);
+justify-content: center;
     }
-    }
-        @media screen and (min-width: 480px) {
-            .person {
-                flex-basis: calc((100% - 30px)/2);
-                justify-content: center;
-                }
-                }
 }
+/*
+@media screen and (min-width: 1200px) {
+width: 100%;
+text-align: center;
+} 
+*/
+
 .namec {
+    @media screen and (min-width: 320px) {
+    width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
 @media screen and (min-width: 480px) {
 width: 100%;
 padding-top: 30px;
