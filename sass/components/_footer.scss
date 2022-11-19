@@ -1,11 +1,18 @@
 .footer {
-    @media screen and (min-width: 320px) and (min-width: 480px) {
+     @media screen and (min-width: 320px) {
+        background-color: #2f303a;
+        padding-top: 60px;
+         padding-bottom: 60px;
+         max-width: 100%;
+        margin: 0 auto;
+     }
+    @media screen  and (min-width: 480px) {
         text-align: center;
-            width: 100%;
-            padding-top: 60px;
-                padding-bottom: 60px;
-                max-width: 100%;
-                margin: 0 auto;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        max-width: 100%;
+        margin: 0 auto;
     }
     @media screen and (min-width: 1200px) {
     display: flex;
@@ -16,7 +23,12 @@
 }
 
 .footer-fortwo{
-@media screen and (min-width: 320px) and (min-width: 480px) {
+@media screen and (min-width: 320px){
+text-align: center;
+width: 100%;
+ margin-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
 text-align: center;
 width: 100%;
 margin-bottom: 60px;
@@ -32,18 +44,35 @@ margin-bottom: 60px;
         width: 100%;
         text-align: left;
         margin-bottom: 0;
-        padding-right: 60px;
+        padding-right: 56px;
+        align-content: center;
 }
 }
        
 .container-f {
+@media screen and (min-width: 320px) {
+    display: flex;
+        flex-wrap: wrap;
+    max-width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        align-items: center;
+}
     @media screen and (min-width: 480px) {
+        max-width: 480px;
             display: flex;
             flex-wrap: wrap;
     }
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
     @media screen and (min-width: 1200px) {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -172,7 +201,12 @@ img {
 
 
 .footer-icons-link {
-@media screen and (min-width: 320px) and (min-width: 480px) {
+@media screen and (min-width: 320px) {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
     text-align: center;
     width: 100%;
     margin-bottom: 60px;
@@ -193,7 +227,16 @@ img {
 }
 
 .foter-link-title {
-@media screen and (min-width: 320px) and (min-width: 480px) {
+@media screen and (min-width: 320px){
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
     font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -284,7 +327,16 @@ img {
 }
 
 .foter-link-tit {
-@media screen and (min-width: 320px) and (min-width: 480px) {
+@media screen and (min-width: 320px){
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: .03em;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+        margin-bottom: 20px;
+    }
+@media screen and (min-width: 480px) {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -312,7 +364,13 @@ img {
 }
 
 .form-button-foot{
-@media screen and (min-width: 320px) and (min-width: 480px) {
+ @media screen and (min-width: 320px) {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+@media screen and (min-width: 480px) {
     text-align: center;
     width: 100%;
     }
@@ -328,6 +386,18 @@ img {
 }
 
 .input-mail {
+    @media screen and (min-width: 320px) {
+        width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+            padding-left: 16px;
+            background-color: rgba(0, 0, 0, 0);
+            color: var(--primary-white-color);
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-radius: 4px;
+        }
+
+@media screen and (min-width: 480px) {
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -346,6 +416,7 @@ img {
     color: rgba(255, 255, 255, 0.6);
     outline: none;
 }
+}
 @media screen and (min-width: 768px) {
 .input-mail {
     margin-bottom: 16px;
@@ -356,11 +427,8 @@ img {
     margin-bottom: 0;
 }
 }
-
-
 .input-mail:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
 .foot-em-bottom:hover,
@@ -368,22 +436,33 @@ img {
     background-color: var(--accent-color);
 }
 
-.form-pidp {
-    @media screen and (min-width: 320px) and (min-width: 480px) {
-    display: flex;
+.form-pidp{
+    @media screen and (min-width: 320px){
     gap: 12px;
     flex-wrap: wrap;
-    justify-content: center;
-    }
-    @media screen and (min-width: 768px) {
     display: flex;
-        gap: 12px;
-        flex-direction: column;
-            
-            align-items: center;
-        flex-wrap: nowrap;
-        }
-    @media screen and (min-width: 1200px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+        align-items: center;
+    }
+@media screen and (min-width: 480px){
+    gap: 12px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+@media screen and (min-width: 768px) {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    }
+@media screen and (min-width: 1200px) {
     display: flex;
     gap: 12px;
     justify-content: flex-end;

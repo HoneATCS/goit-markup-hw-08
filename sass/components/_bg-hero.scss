@@ -95,6 +95,19 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .h-title {
+@media screen and (min-width: 320px) {
+font-weight: 900;
+font-size: 26px;
+line-height: 1.62;
+letter-spacing: .06em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+ text-align: center;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+}
+@media screen and (min-width: 480px) {
     text-align: center;
     max-width: 796px;
     margin-top: 200px;
@@ -102,7 +115,6 @@
     margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-.h-title {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
@@ -143,7 +155,6 @@ screen and (min-width: 768px) and (min-resolution: 2dppx){
 }
 }
 }
-
 
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
