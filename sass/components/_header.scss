@@ -192,6 +192,7 @@ color: var(--accent-color);
  .contacts-list-h{
 @media screen and (max-width: 768px){
     display: none;
+    margin-left: 0;
 }
 
 }
