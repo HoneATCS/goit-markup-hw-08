@@ -198,7 +198,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
         align-items: center;
     }
 @media screen and (min-width: 480px) {
-    min-width: 480px;
+    min-width: 100%;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -210,13 +210,13 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     align-items: center;
 }
 @media screen and (min-width: 780px) {
-    min-width: 780px;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 100%;
+    text-align: center;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        margin: 0 auto;
     background-color: #C4C4C4;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-hero-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-hero-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
